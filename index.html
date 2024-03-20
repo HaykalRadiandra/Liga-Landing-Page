@@ -16,16 +16,26 @@
 
 <body>
     <header>
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-        <a href="#" class="logo">HealthTech<span>.</span></a>
-        <nav class="navbar">
-            <a href="#beranda">Beranda</a>
-            <a href="#profil">Profil</a>
-            <a href="#fitur">Fitur</a>
-            <a href="#produk">Produk</a>
-            <a href="#home" class="btnnav">Instal</a>
-        </nav>
+		<div class="container">
+ 
+			<div class="header-logo">
+                <img src="/assets/logo.png" alt="">
+                <a href="#" class="logo">HealthTech<span>.</span></a>
+            </div>
+			
+			<ul class="menu">
+                <li><a class="btn" href="#beranda">Beranda</a></li>
+				<li><a class="btn" href="#profil">Profil</a></li>
+				<li><a class="btn" href="#fitur">Fitur</a></li>
+				<li><a class="btn" href="#produk">Produk</a></li>
+				<li><a href="#home" class="btnnav">Instal</a></li>
+			</ul>
+			
+			<div class="tombol">
+				&#9776;
+			</div>
+ 
+		</div>
     </header>
 
     <!-- beranda -->
@@ -70,7 +80,6 @@
 
 
     <!-- icons -->
-
     <section class="icons-container">
         <div class="icons">
             <i class="fas fa-globe"></i>
@@ -101,212 +110,284 @@
             </div>
         </div>
     </section>
-
-
-    <br><br>
-
+    
+    <div class="bgcolor"></div>
 
     <!-- fitur -->
     <div class="Fitur" id="fitur">
-        <div class="Bgfitur"></div>
-        <div class="judul-Fitur">FITUR</div>
-        <div class="Fitur1">
-            <div class="iconftr"><i class="fas fa-server"></i></div>
-            <div class="Babfitur">Dashboard Kesehatan</div>
-            <div class="penjelasan-ftr">Tampilan rinci menyajikan grafik progres kesehatan dan menganalisis data gaya
-                hidup sehat.</div>
+        
+        <h2>Fitur</h2>
+        <div class="box-fitur">
+            <div class="fitur-kanan">
+
+                <div class="box-content">
+                    <div class="iconftr"><i class="fas fa-server"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Dashboard Kesehatan</div>
+                        <div class="penjelasan-ftr">Tampilan rinci menyajikan grafik progres kesehatan dan menganalisis data gaya hidup sehat.</div>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="iconftr"><i class="fas fa-eye-slash"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Fitur "Mode Fokus"</div>
+                        <div class="penjelasan-ftr">mematikan atau membatasi penggunaan ponsel selama periode tertentu yang telah diatur.</div>
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="iconftr"><i class="fas fa-bell"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Pengingat Waktu</div>
+                        <div class="penjelasan-ftr">Membantu menjaga keseimbangan dengan mengingatkan Anda untuk istirahat dan merawat kesehatan tubuh Anda.</div>    
+                    </div>
+                </div>
+
+                <div class="box-content">
+                    <div class="iconftr"><i class="fas fa-user-friends"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Komunitas Healthy</div>
+                        <div class="penjelasan-ftr">Forum dan grup diskusi memberikan dukungan dan solusi manajemen stres berbasis data.</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="fitur-tengah">
+                <img src="assets/fiturapps.png" alt="" class="hp">
+            </div>
+    
+            <div class="fitur-kiri">
+                <div class="box-content2">
+                    <div class="iconftr"><i class="fas fa-clock"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Pemantauan Real Time</div>
+                        <div class="penjelasan-ftr">Pemantauan kesehatan real-time dengan saran responsif berdasarkan data kesehatan.</div>    
+                    </div>
+                </div>
+
+                <div class="box-content2">
+                    <div class="iconftr"><i class="fas fa-home"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Fitur "Family Controls"</div>
+                        <div class="penjelasan-ftr">"Memungkinkan para orangtua dan orang-orang terkasih untuk memantau aktivitas orang tersayang dengan mudah."</div>
+                    </div>
+                </div>
+
+                <div class="box-content2">
+                    <div class="iconftr"><i class="fas fa-book-medical"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Jurnal Kesehatan Digital</div>
+                        <div class="penjelasan-ftr">Melacak aktivitas pengguna dan mencatat kebiasaan secara detail sesuatu yang dilakukan dan yang sebaiknya dihindari.</div>
+                    </div>
+                </div>
+
+                <div class="box-content2">
+                    <div class="iconftr"><i class="fas fa-heartbeat"></i></div>
+                    <div class="text-fitur">
+                        <div class="Babfitur">Sembuh Sigap</div>
+                        <div class="penjelasan-ftr">Bagi pengguna yang mengalami ketergantungan digital, membantu proses pemulihan hingga mencapai kesembuhan.</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="Fitur2">
-            <div class="iconftr"><i class="fas fa-eye-slash"></i></div>
-            <div class="Babfitur">Fitur "Mode Fokus"</div>
-            <div class="penjelasan-ftr">mematikan atau membatasi penggunaan ponsel selama periode tertentu yang telah
-                diatur.</div>
-        </div>
-        <div class="Fitur3">
-            <div class="iconftr"><i class="fas fa-bell"></i></div>
-            <div class="Babfitur">Pengingat Waktu</div>
-            <div class="penjelasan-ftr">Membantu menjaga keseimbangan dengan mengingatkan Anda untuk istirahat dan
-                merawat kesehatan tubuh Anda.</div>
-        </div>
-        <div class="Fitur4">
-            <div class="iconftr"><i class="fas fa-user-friends"></i></div>
-            <div class="Babfitur">Komunitas Healthy</div>
-            <div class="penjelasan-ftr">Forum dan grup diskusi memberikan dukungan dan solusi manajemen stres berbasis
-                data.</div>
-        </div>
-        <div class="Fitur5">
-            <div class="iconftr"><i class="fas fa-clock"></i></div>
-            <div class="Babfitur">Pemantauan Real Time</div>
-            <div class="penjelasan-ftr">Pemantauan kesehatan real-time dengan saran responsif berdasarkan data
-                kesehatan.</div>
-        </div>
-        <div class="Fitur6">
-            <div class="iconftr"><i class="fas fa-home"></i></div>
-            <div class="Babfitur">Fitur "Family Controls"</div>
-            <div class="penjelasan-ftr">"Memungkinkan para orangtua dan orang-orang terkasih untuk memantau aktivitas
-                orang tersayang dengan mudah."</div>
-        </div>
-        <div class="Fitur7">
-            <div class="iconftr"><i class="fas fa-book-medical"></i></div>
-            <div class="Babfitur">Jurnal Kesehatan Digital</div>
-            <div class="penjelasan-ftr">Melacak aktivitas pengguna dan mencatat kebiasaan secara detail sesuatu yang
-                dilakukan dan yang sebaiknya dihindari.</div>
-        </div>
-        <div class="Fitur8">
-            <div class="iconftr"><i class="fas fa-heartbeat"></i></div>
-            <div class="Babfitur">Sembuh Sigap</div>
-            <div class="penjelasan-ftr">Bagi pengguna yang mengalami ketergantungan digital, membantu proses pemulihan hingga mencapai kesembuhan.</div>
-        </div>
-        <img src="assets/fiturapps.png" alt="" class="hp">
+        
     </div>
-
-    <!-- testimoni -->
-    <section id="testimoni">
-        <h1>Testimoni</h1>
-
-        <div class="wrapper">
-            <i id="left" class="fas fa-angle-left"></i>
-            <ul class="carousel">
-                <li class="card">
-                    <div class="img"><img src="assets/tes1.png" alt="img" draggable="false"></div>
-                    <h2>Rayan Ekadanta</h2>
-                    <span>Polisi Siber</span>
-                    <p>"Terkadang, ketergantungan teknologi buruk. Namun, HealthTech membuat orang lebih peduli pada
-                        kesehatan. Langkah positif untuk seimbangkan kehidupan digital dan fisik."</p>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="assets/tes2.png" alt="img" draggable="false"></div>
-                    <h2>Azura Jessicaini Sp. A</h2>
-                    <span>Dokter Spesialis Anak</span>
-                    <p>"Dengan HealthTech, anak-anak memantau tidur dan batas waktu teknologi, membantu mereka mengatasi
-                        ketergantungan dan tumbuh secara sehat."</p>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="assets/tes3.png" alt="img" draggable="false"></div>
-                    <h2>Murdha Praditomo S.TI</h2>
-                    <span>Information Security Analyst</span>
-                    <p>"Dengan HealthTech, pengguna mengatur waktu layar dan memantau kesehatan digital, mengurangi
-                        risiko keamanan dan masalah kesehatan teknologi."</p>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="assets/tes4.png" alt="img" draggable="false"></div>
-                    <h2>Angela Faznuliyah Sp.RM</h2>
-                    <span>Dokter Rehabilitasi Medis</span>
-                    <p>"Teknologi digital memengaruhi kesehatan tubuh. HealthTech membantu pasien mengatur waktu dan
-                        istirahat, serta latihan peregangan untuk mencegah cedera. </p>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="assets/tes5.png" alt="img" draggable="false"></div>
-                    <h2>Yudha Diryantra Sp.M</h2>
-                    <span>Dokter Spesialis Mata</span>
-                    <p>"HealthTech membantu pasien mengatur waktu layar, istirahat mata, dan latihan relaksasi. Sebagai
-                        dokter mata, saya mendukung solusi ini."</p>
-                </li>
-                <li class="card">
-                    <div class="img"><img src="assets/tes6.png" alt="img" draggable="false"></div>
-                    <h2>dr. Amanda Silvyani Sp.KJ</h2>
-                    <span>Psikiater</span>
-                    <p>"Sebagai psikiater, HealthTech membantu pasien mengurangi ketergantungan teknologi, mengatasi
-                        stres dan kecemasan dari penggunaan teknologi berlebihan."</p>
-                </li>
-            </ul>
-            <i id="right" class="fas fa-angle-right"></i>
-        </div>
-
-    </section>
+    
+    
+    
+    <div class="Bgfitur"></div>
 
 
 
-    <!-- produk -->
-    <div class="Produk" id="produk">
-        <div class="bgproduk"></div>
-        <div class="ProductHp">
-            <img src="assets/logo.png" alt="">
-            <h2>HealthTech.</h2>
-        </div>
-        <div class="UnduhAplikasi">Unduh Aplikasi</div>
-        <div class="Teksproduk">orm integratif yang menyatukan berbagai aplikasi kesehatan menjadi memberikan pengalaman
-            holistik untuk meningkatkan gaya hidup sehat. Dengan menggabungkan fitur aktivitas fisik, panduan latih
-        </div>
-        <a href="#">
-            <div class="Buttonw">
-                <div class="iconwindows">
-                    <i class="fab fa-windows"></i>
-                </div>
-                <div class="Windows">WINDOWS</div>
+        <!-- testimoni -->
+        <section id="testimoni">
+            <h1>Testimoni</h1>
+
+            <div class="wrapper">
+                <i id="left" class="fas fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="assets/tes1.png" alt="img" draggable="false"></div>
+                        <h2>Rayan Ekadanta</h2>
+                        <span>Polisi Siber</span>
+                        <p>"Terkadang, ketergantungan teknologi buruk. Namun, HealthTech membuat orang lebih peduli pada
+                            kesehatan. Langkah positif untuk seimbangkan kehidupan digital dan fisik."</p>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/tes2.png" alt="img" draggable="false"></div>
+                        <h2>Azura Jessicaini Sp. A</h2>
+                        <span>Dokter Spesialis Anak</span>
+                        <p>"Dengan HealthTech, anak-anak memantau tidur dan batas waktu teknologi, membantu mereka
+                            mengatasi
+                            ketergantungan dan tumbuh secara sehat."</p>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/tes3.png" alt="img" draggable="false"></div>
+                        <h2>Murdha Praditomo S.TI</h2>
+                        <span>Information Security Analyst</span>
+                        <p>"Dengan HealthTech, pengguna mengatur waktu layar dan memantau kesehatan digital, mengurangi
+                            risiko keamanan dan masalah kesehatan teknologi."</p>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/tes4.png" alt="img" draggable="false"></div>
+                        <h2>Angela Faznuliyah Sp.RM</h2>
+                        <span>Dokter Rehabilitasi Medis</span>
+                        <p>"Teknologi digital memengaruhi kesehatan tubuh. HealthTech membantu pasien mengatur waktu dan
+                            istirahat, serta latihan peregangan untuk mencegah cedera. </p>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/tes5.png" alt="img" draggable="false"></div>
+                        <h2>Yudha Diryantra Sp.M</h2>
+                        <span>Dokter Spesialis Mata</span>
+                        <p>"HealthTech membantu pasien mengatur waktu layar, istirahat mata, dan latihan relaksasi.
+                            Sebagai
+                            dokter mata, saya mendukung solusi ini."</p>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="assets/tes6.png" alt="img" draggable="false"></div>
+                        <h2>dr. Amanda Silvyani Sp.KJ</h2>
+                        <span>Psikiater</span>
+                        <p>"Sebagai psikiater, HealthTech membantu pasien mengurangi ketergantungan teknologi, mengatasi
+                            stres dan kecemasan dari penggunaan teknologi berlebihan."</p>
+                    </li>
+                </ul>
+                <i id="right" class="fas fa-angle-right"></i>
             </div>
-        </a>
 
-        <a href="#">
-            <div class="Buttonps">
-                <div class="iconplaystore">
-                    <i class="fab fa-google-play"></i>
-                </div>
-                <div class="PlayStore">PLAY STORE</div>
+        </section>
+
+
+
+        <!-- produk -->
+        <div class="Produk" id="produk">
+
+            <div class="produk-kanan"></div>
+            <div class="produk-kiri"></div>
+            
+            <div class="bgproduk"></div>
+            <div class="ProductHp">
+                <img src="assets/logo.png" alt="">
+                <h2>HealthTech.</h2>
             </div>
-        </a>
+            <div class="UnduhAplikasi">Unduh Aplikasi</div>
+            <div class="Teksproduk">orm integratif yang menyatukan berbagai aplikasi kesehatan menjadi memberikan
+                pengalaman
+                holistik untuk meningkatkan gaya hidup sehat. Dengan menggabungkan fitur aktivitas fisik, panduan latih
+            </div>
+            <a href="#">
+                <div class="Buttonw">
+                    <div class="iconwindows">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="Windows">WINDOWS</div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="Buttonps">
+                    <div class="iconplaystore">
+                        <i class="fab fa-google-play"></i>
+                    </div>
+                    <div class="PlayStore">PLAY STORE</div>
+                </div>
+            </a>
+
+        </div>
+
+
+
+
+<section class="room-7">
+    <div class="left-side">
 
     </div>
+    <form class="right-side">
+        <input id="name" type="text" placeholder="Name"><br>
+        <input id="city" type="text" placeholder="City"><br>
+        <input id="email" type="email" placeholder="Email"><br>
+        <input id="zip-code" type="number" placeholder="Zip Code"><br>
+        <input id="user-message" type="text" placeholder="Your Message"><br>
+        <input id="status" type="checkbox" name="status" value="biasa">
+        <label for="status">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+        <button id="submit-form" type="submit">Submit</button><br>
+        <div id="warning"></div>
+    </form>
+    
+</section>
+<!-- form -->
 
-    <!-- footer -->
-    <footer>
-        <div class="content">
-            <div class="top">
-                <div class="logo-details">
-                    <img src="assets/logo.png" alt="">
-                    <span class="logo_name">HealthTech</span>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="content">
+                <div class="top">
+                    <div class="logo-details">
+                        <img src="assets/logo.png" alt="">
+                        <span class="logo_name">HealthTech</span>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_judul">"Self-Love : Kunci Sukses Di Era Digital."</li>
+                        <p>HealthTech Adalah Platform Integratif APLIKASI KESEHATAN DIGITAL Menyatukan Berbagai
+                            Kebutuhan
+                            Kesehatan Menjadi Satu, Memberikan Pengalaman Untuk Meningkatkan Gaya Hidup Sehat.</p>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Website</li>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#fitur">Fitur</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Produk</li>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">Playstore</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Hubungi Kami</li>
+                        <p>(021) 4876 123</p>
+                        <p>+62 81234567890</p>
+                        <br>
+                        <p>Jl. Ronggowarsito, Tj. Mas,</p>
+                        <p>Kec. Semarang Utara, Kota Semarang, Jawa Tengah</p>
+                    </ul>
                 </div>
             </div>
-            <div class="link-boxes">
-                <ul class="box">
-                    <li class="link_judul">"Self-Love : Kunci Sukses Di Era Digital."</li>
-                    <p>HealthTech Adalah Platform Integratif APLIKASI KESEHATAN DIGITAL Menyatukan Berbagai Kebutuhan
-                        Kesehatan Menjadi Satu, Memberikan Pengalaman Untuk Meningkatkan Gaya Hidup Sehat.</p>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Website</li>
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#profil">Profil</a></li>
-                    <li><a href="#fitur">Fitur</a></li>
-                    <li><a href="#produk">Produk</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Produk</li>
-                    <li><a href="#">Windows</a></li>
-                    <li><a href="#">Playstore</a></li>
-                </ul>
-                <ul class="box">
-                    <li class="link_name">Hubungi Kami</li>
-                    <p>(021) 4876 123</p>
-                    <p>+62 81234567890</p>
-                    <br>
-                    <p>Jl. Ronggowarsito, Tj. Mas,</p>
-                    <p>Kec. Semarang Utara, Kota Semarang, Jawa Tengah</p>
-                </ul>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2024 <a href="#">HealthTech.</a>All rights reserved</span>
+                    <span class="policy_terms">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms & condition</a>
+                    </span>
+                </div>
             </div>
-        </div>
-        <div class="bottom-details">
-            <div class="bottom_text">
-                <span class="copyright_text">Copyright © 2024 <a href="#">HealthTech.</a>All rights reserved</span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a>
-                </span>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
 
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -47,107 +47,108 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
+    background: linear-gradient(245.59deg, #6455ac 0%, #806FD3 28.53%, #a08ef9 75.52%);
+    /* background: var(--ungu-tua); */
 }
 
 
-.btnnav {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #fff;
-    padding: .9rem 3.5rem;
-    cursor: pointer;
-    font-size: 1.7rem;
-    border: 1px solid #fff;
-}
-
-.btnnav:hover {
-    background: var(--ungu-tua);
-}
-
-
-/* navbar */
-header {
-    position: fixed;
-    height: 7rem;
+header{
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	  margin: 0;
+	  padding: 1rem 9%;
+    z-index: 9999;
     background: transparent;
-    transition: background 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all .8s ease;
 }
 
-header.scrolled {
-    background: var(--ungu);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+header.scrolled{
+    background: rgba(100, 85, 172, 0.5);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
-
-header .logo {
-    font-size: 3rem;
-    color: #ffffff;
-    font-weight: bolder;
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+header .header-logo{
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .5rem;
+  }
+
+header .header-logo img{
+    width: 10%;
+  }
+ 
+header .logo{
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
 
 header .logo span {
     color: var(--ungu-tua)
 }
 
-header .navbar a {
+header .menu a {
     font-size: 1.7rem;
-    padding: 0 1rem;
+    padding: .3rem 1rem;
     color: #fff;
-    margin-left: 30px;
+    margin-left: 20px;
     font-weight: 600;
     border: 2px solid transparent;
-    transition: all .55s ease
+    transition: all .5s ease;
 }
 
-header .navbar a:last-child{
+header .menu a.btn:hover{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fff;  
+}
+
+header .menu .btnnav:last-child{
     border: 2px solid #fff;
     border-radius: 50px;
-    padding: 4px 20px;
+    padding: 5px 20px;
 }
 
-header .navbar a:hover {
+header .menu .btnnav:hover {
     color: #000000b1;
     background: rgba(255, 255, 0, 0.895);
     border: 2px solid var(--ungu-tua);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-
-header #toggler {
-    display: none;
+ 
+header .container .tombol{
+	display: none;
+	color: white;
+	font-size: 14pt;			
 }
-
-header .fa-bars {
-    font-size: 3rem;
-    color: #fff;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .1);
-    display: none;
+ 
+header .container .tombol:hover{
+	cursor: pointer;
 }
-
-header .buttonnav {
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 6px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+ 
+header .container .menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
 }
-
-header .buttonnav a:hover {
-    background-color: var(--ungu-tua);
-    color: #fff;
+ 
+header .container .menu li a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
 }
 
 
@@ -156,9 +157,7 @@ header .buttonnav a:hover {
 .beranda {
     height: 100%;
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #6455ac 0%, #806FD3 28.53%, #a08ef9 75.52%);
-    position: relative;
+    min-height: 92vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -192,6 +191,15 @@ header .buttonnav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .beranda .beranda-img img {
+  transition: filter .5s ease-in;
+
+}
+
+.beranda .beranda-img img:hover{
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .beranda-img img {
@@ -235,6 +243,7 @@ header .buttonnav a:hover {
 
 /* profil */
 .profil {
+  background-color: white;
     padding: 1rem 9%;
 }
 
@@ -269,7 +278,7 @@ header .buttonnav a:hover {
     width: 100%;
     border: 1.5rem solid #fff;
     border-radius: .5rem;
-    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
     object-fit: cover;
 }
@@ -342,26 +351,43 @@ header .buttonnav a:hover {
     color: #555;
     font-size: var(--teks-sedang);
 }
+ .bgcolor{
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
 
 
 
 /* fitur */
 .Fitur {
     width: 100%;
-    height: 650px;
-    position: relative;
+    padding: 2rem 9% 5rem 9%;
 }
+
+.Fitur h2 {
+    color: white;
+    text-align: center;
+    font-size: var(--judul-bab);
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.Fitur .box-fitur{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 .Bgfitur {
     width: 100%;
-    height: 520px;
-    left: 0px;
-    top: -6.44px;
-    position: absolute;
-    background: var(--ungu);
+    height: 100px;
+    bottom: -6.44px;
+    background: white;
 }
 
-.judul-Fitur {
+/* .judul-Fitur {
     width: 100%;
     top: 30px;
     position: absolute;
@@ -370,10 +396,10 @@ header .buttonnav a:hover {
     font-size: var(--judul-bab);
     font-weight: 700;
     word-wrap: break-word;
-}
+} */
 
 
-.Fitur8,
+/* .Fitur8,
 .Fitur7,
 .Fitur6,
 .Fitur5,
@@ -421,13 +447,55 @@ header .buttonnav a:hover {
 .Fitur1 {
     left: 169px;
     top: 100px;
+} */
+
+.fitur-kiri,
+.fitur-kanan {
+  gap: 1rem;
+  width: 30%;
+}
+.fitur-tengah{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 25%;
 }
 
+.Fitur .fitur-kanan{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  gap: 3rem;
+}
+
+.Fitur .fitur-kiri {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: left;
+  gap: 3rem;
+}
+
+.Fitur .box-content {
+  gap: 2rem;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Fitur .box-content2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
 .Babfitur {
-    width: 200px;
+    width: 100%;
     height: 27.59px;
-    left: 70px;
-    position: absolute;
     color: white;
     font-size: var(--teks-biasa);
     font-weight: 600;
@@ -436,9 +504,6 @@ header .buttonnav a:hover {
 
 .penjelasan-ftr {
     width: 250px;
-    left: 70px;
-    top: 25px;
-    position: absolute;
     color: white;
     font-size: var(--teks-kecil);
     font-weight: 400;
@@ -448,7 +513,6 @@ header .buttonnav a:hover {
 .iconftr {
     width: 55px;
     height: 55px;
-    position: absolute;
     background: #FAFAFA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -463,19 +527,20 @@ header .buttonnav a:hover {
 }
 
 
-.hp {
-    width: 250px;
-    height: 500px;
+.fitur-tengah .hp {
+    width: 240px;
     position: absolute;
-    top: 55%;
+    top: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
+
 /* testimmoni */
 
 #testimoni {
+    background-color: white;
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -588,17 +653,7 @@ header .buttonnav a:hover {
     text-align: center;
   }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
 
 /* produk */
 .Produk {
@@ -704,6 +759,85 @@ header .buttonnav a:hover {
 }
 
 
+/* room-7 */
+section.room-7 {
+  background-color: white;
+  display: flex;
+
+}
+
+.room-7 .left-side{
+  width: 40%;
+  height: 400px;
+  background-color: red;
+}
+
+
+/* form */
+form {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+input[type="checkbox"]{
+  margin-top: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px
+}
+
+form label {
+    display: inline-block;
+    width: calc(100% - 30px);
+    color: var(--putih);
+    margin-top: 1rem;
+    text-align: start;
+    vertical-align: middle;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+#warning {
+  color: red;
+  margin-top: 10px;
+}
+
+#submit-form {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-form:hover {
+  background-color: #45a049;
+}
+
+#user-message {
+  margin-bottom: 10px;
+}
+
+
+
 /* footer */
 
 footer{
@@ -713,14 +847,14 @@ footer{
   bottom: 0;
   left: 0;
 }
-footer::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: var(--ungu-tua);
-}
+  /* footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--ungu-tua);
+  } */
 footer .content{
   max-width: 1250px;
   margin: 0 8rem;
@@ -887,140 +1021,46 @@ footer .bottom-details .bottom_text{
 .bottom-details .bottom_text a{
   margin-right: 10px;
 }
-@media (max-width: 900px) {
-  footer .content .link-boxes{
-    flex-wrap: wrap;
+
+
+/* Media Responsive */
+
+@media screen and (max-width: 968px) {
+  header .header-logo img{
+      width: 5%;
   }
-  footer .content .link-boxes .input-box{
-    width: 40%;
-    margin-top: 10px;
-  }
+
+header .container .menu {
+  display: none;
 }
-@media (max-width: 700px){
-  footer{
-    position: relative;
-  }
-  .content .top .logo-details{
-    font-size: 26px;
-  }
-  .content .top .media-icons a{
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 3 - 10px);
-  }
-  footer .content .link-boxes .input-box{
-    width: 60%;
-  }
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a{
-    font-size: 12px;
-  }
+
+header .container .menu.aktif{
+  display:inline-block;
+  position: absolute;
+  top: 64px;
+  background: var(--ungu);
+  padding: 10px 20px;
+  right: 0;
+  left: 0;
 }
-@media (max-width: 520px){
-  footer::before{
-    top: 145px;
-  }
-  footer .content .top{
-    flex-direction: column;
-  }
-  .content .top .media-icons{
-    margin-top: 16px;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 2 - 10px);
-  }
-  footer .content .link-boxes .input-box{
+
+header .container .menu.aktif li a{
+  padding: 10px;
+  display: inline-block !important;
+}
+
+header .container .tombol {
+  display: block;
+}
+}
+/* @media (max-width: 992px){
+  header{
     width: 100%;
   }
 }
 
 
 
+@media (max-width: 576px) {
 
-
-    
-    
-    @media(max-width:991px) {
-        html {
-            font-size: 55%;
-        }
-
-        .beranda {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        header {
-            padding: 2rem;
-        }
-
-        section {
-            padding: 2rem;
-        }
-
-    }
-
-    @media(max-width:768px) {
-
-        html .fa-bars {
-            display: block;
-        }
-
-        header {
-            flex-direction: row-reverse;
-        }
-
-        header .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background-color: #eee;
-            border-top: .1rem solid rgba(0, 0, 0, .1);
-        }
-
-        header #toggler:checked~.navbar {
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        }
-
-        header .navbar a {
-            margin: 1.5rem;
-            padding: 1.5rem;
-            color: black;
-            /* background: #fff; */
-            /* background-color: #fff; */
-            border: .1rem solid rgba(0, 0, 0, 1);
-            display: block;
-        }
-
-        .beranda .beranda-text h1 {
-            font-size: 6rem;
-        }
-
-        .beranda .beranda-text p {
-            font-size: 1.3rem;
-        }
-
-        .icons-container .icons h3 {
-            font-size: 2rem;
-        }
-
-        .icons-container .icons span {
-            font-size: 1.7rem;
-        }
-
-
-    }
-
-    @media(max-width:450px) {
-        html {
-            font-size: 50%;
-        }
-
-        .heading {
-            font-size: 3rem;
-        }
-    }
+} */

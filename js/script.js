@@ -1,8 +1,18 @@
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    header.classList.toggle('scrolled', window.scrollY > 0);
+// deklarasi tombol dan menu
+const tombol = document.querySelector('.tombol');
+const menu = document.querySelector('.menu');
+
+// membuat event click
+// pada saat tombol di click, tambahkan class aktif pada class menu
+// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+tombol.addEventListener('click', () => {
+		menu.classList.toggle('aktif');
 });
 
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    header.classList.toggle('scrolled', window.scrollY > 35);
+});
 
 // testimoni
 const wrapper = document.querySelector(".wrapper");
@@ -89,3 +99,56 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+
+
+// form
+// Tambahkan kode JavaScript kalian di file ini
+function handleGetFormData() {
+    const formData = {
+        name: document.getElementById('name').value,
+        city: document.getElementById('city').value,
+        email: document.getElementById('email').value,
+        zipCode: document.getElementById('zip-code').value,
+        status: document.getElementById('status').checked
+    };
+    return formData;
+}
+
+function isNumber(str) {
+    for (let i = 0; i < str.length; i++) {
+        if (isNaN(parseInt(str[i]))) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+function checkboxIsChecked() {
+    return document.getElementById('status').checked;
+}
+
+function validateFormData(formData) {
+    return (
+        formData !== null &&
+        !isNaN(formData.zipCode) &&
+       checkboxIsChecked()
+    );
+}
+
+function submit(event) {
+    event.preventDefault();
+    const isValid = validateFormData(handleGetFormData(formData));
+    const warningDiv = document.getElementById('warning');
+
+    if (isValid) {
+        warningDiv.innerText = '';
+    } else {
+        warningDiv.innerText = 'Periksa form anda sekali lagi';
+    }
+}
+
+document.querySelector('form').addEventListener('submit', submit);
