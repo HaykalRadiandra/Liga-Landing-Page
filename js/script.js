@@ -105,7 +105,6 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 
 // form
-// Tambahkan kode JavaScript kalian di file ini
 function handleGetFormData() {
     const formData = {
         name: document.getElementById('name').value,
