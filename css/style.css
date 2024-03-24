@@ -161,7 +161,7 @@ header .container .menu {
   min-height: 92vh;
   display: flex;
   align-items: center;
-  padding: 1rem 9%;
+  padding: 1rem 9%;  
 }
 
 
@@ -191,6 +191,7 @@ header .container .menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .beranda .beranda-img img {
@@ -633,17 +634,18 @@ header .container .menu {
 }
 
 .Produk .produk-kanan {
-
   z-index: 1;
 }
 
 .Produk .produk-kanan .ProductHp {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .produk-kanan .ProductHp img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
-  width: 100%;
+  width: 60%;
 }
 
 .Produk .produk-kiri {
