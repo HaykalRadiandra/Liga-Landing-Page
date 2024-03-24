@@ -274,7 +274,7 @@ header .container .menu {
   position: relative;
 }
 
-.profil .row .video-container video {
+.profil .row .video-container img {
   width: 100%;
   border: 1.5rem solid #fff;
   border-radius: .5rem;
@@ -624,6 +624,7 @@ header .container .menu {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  min-height: 48vh;
 }
 
 .bgproduk {
@@ -645,7 +646,7 @@ header .container .menu {
 
 .produk-kanan .ProductHp img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.9));
-  width: 60%;
+  width: 20vw;
 }
 
 .Produk .produk-kiri {
@@ -722,14 +723,14 @@ header .container .menu {
     background: white;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .form-page .wrapper {
     width: 100%;
-    /* max-width: calc(40% - 20px); */
     background: #fff;
     border-radius: 5px;
-    padding: 10px 20px 0px 20px;
+    padding: 10px 20px 10px 20px;
     transition: box-shadow 1s ease;
     box-shadow: inset -2px -3px 4px rgba(0, 0, 0, 0.4), 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
@@ -744,6 +745,7 @@ header .container .menu {
 
 .form-page .wrapper form {
     margin: 15px 0;
+
 }
 
 .form-page .wrapper form.disabled {
@@ -758,12 +760,12 @@ header .container .menu {
     margin-bottom: 10px;
 }
 
-.field {
+#name {
     flex: 0 0 calc(50% - 10px);
     position: relative;
 }
 
-.field input {
+.form-group {
     width: 100%;
     height: 40px; 
     outline: none;
@@ -771,22 +773,23 @@ header .container .menu {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 1rem;
 }
 
-.field input::placeholder {
+.form-group::placeholder {
     color: #ccc;
 }
 
-.field input:focus {
+.form-group:focus {
     border: 2px solid var(--ungu);
 }
 
-.message {
+.form-group-group {
     position: relative;
     margin-bottom: 10px;
 }
 
-.message textarea {
+textarea {
     width: 100%;
     min-height: 100px;
     padding: 10px 12px;
@@ -796,11 +799,11 @@ header .container .menu {
     resize: vertical;
 }
 
-.message textarea::placeholder {
+textarea::placeholder {
     color: #ccc;
 }
 
-.message textarea:focus {
+textarea:focus {
     border: 2px solid var(--ungu);
 }
 
@@ -820,13 +823,7 @@ form label {
   font-size: var(--teks-sedang);
 }
 
-.button-area {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.button-area button {
+button {
     color: #fff;
     border: none;
     outline: none;
@@ -838,8 +835,8 @@ form label {
     transition: background 0.3s ease;
 }
 
-.button-area button:hover {
-    background: #025ce3;
+button:hover {
+    background: var(--ungu-tua);
 }
 
 
@@ -854,106 +851,15 @@ form label {
   height: 400px;
 }
 
-/* .contact {
+form #warning {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 100px;
-  background: #fff;
-  box-shadow: 0px 0px 10px 0px #666;
-}
-
-.contact .left-side {
-  display: flex;
-  justify-content: center;
-  width: 60%;
-}
-
-.contact .left-side iframe {
-  width: 100%;
-  height: 400px;
-}
-
-.contact .map-container{
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.contact .right-side {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* form */
-/* form {
-  max-width: 450px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-  margin-top: 1rem;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px
-}
-
-form label {
-  display: inline-block;
-  width: calc(100% - 30px);
-  color: var(--putih);
-  margin: 1rem 0;
-  text-align: start;
-  vertical-align: middle;
-  font-size: var(--teks-sedang);
-}
-
-form button {
-  margin-top: 1rem;
-}
-
-#warning {
-  color: red;
-  margin-top: 10px;
-}
-
-#submit-form {
-  background-color: var(--ungu);
+  display: none;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all .5s ease-in-out;
+  font-size: 1rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  background-color: red;
 }
-
-#submit-form:hover {
-  background-color: var(--ungu-tua);
-  scale: 1.02;
-}
-
-#user-message {
-  margin-bottom: 10px;
-} */
-
 
 
 /* footer */
@@ -1266,6 +1172,18 @@ footer .bottom-details .bottom_text {
   .fitur-kanan {
     width: 100%;
   }
+
+  .Produk {
+    gap: 3rem;
+  }
+
+  .bgproduk {
+    height: 40vw;
+  }
+
+  .Produk .produk-kiri .Button .icon {
+    margin-top: 0;
+  }
   
   .penjelasan-ftr {
     font-size: var(--teks-sedang);
@@ -1357,26 +1275,30 @@ footer .bottom-details .bottom_text {
   header .container .menu.aktif {
     display: inline-block;
     position: absolute;
-    top: 75px;
+    top: 70px;
     background: linear-gradient(20deg, #8f67fd -50%, #6455ac 100%);
     padding: 10px 20px;
-    right: 10px;
+    right: 0px;
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: column;
-    width: 280px;
+    width: 100%;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
   }
-
+  
   .beranda-text h1 {
     font-size: 10vw;
   }
-
+  
   .profil .row .content p {
     font-size: var(--teks-sedang);
   }
+  .profil .row .video-container h3{
+    font-size: 20px;
+  }
+
   .Fitur .box-content2,
   .Fitur .box-content {
     gap: 1rem;
@@ -1387,7 +1309,7 @@ footer .bottom-details .bottom_text {
   }
 
   #testimoni {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
   
   .wrapper .carousel {
@@ -1414,6 +1336,7 @@ footer .bottom-details .bottom_text {
   }
 
   .Produk {
+    min-height: 0;
     gap: 1rem;
   }
 
@@ -1422,7 +1345,7 @@ footer .bottom-details .bottom_text {
   }
 
   .Produk .produk-kiri .Teksproduk p {
-    font-size: var(--teks-kecil);
+    font-size: 120%;
   }
 
   .Produk .produk-kiri .Teksproduk h3 {
@@ -1506,34 +1429,8 @@ footer .bottom-details .bottom_text {
 
   .form-page {
     gap: 4rem;
-    min-height: 120vh;
+    min-height: 135vh;
     padding-bottom: 1rem;
     flex-direction: column;
   }
 }
-
-/* @media (max-width: 600px) {
-  .wrapper form {
-      margin: 25px 0;
-  }
-  .dbl-field {
-      flex-direction: column;
-      margin-bottom: 0;
-  }
-  .field {
-      width: 100%;
-      margin-bottom: 15px;
-  }
-  .message textarea {
-      min-height: 80px;
-  }
-  .button-area {
-      margin-top: 15px;
-      justify-content: center;
-  }
-  .button-area button {
-      width: 100%;
-      padding: 10px 0;
-      font-size: 14px;
-  }
-} */

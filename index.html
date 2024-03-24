@@ -18,36 +18,38 @@
   </head>
 
   <body>
-    <header>
+    <nav>
+      <header>
       <div class="container">
-        <div class="header-logo">
-        <img src="https://i.ibb.co/RDCkWm9/logo.png" alt="logo">
+          <div class="header-logo">
+          <img src="https://i.ibb.co/RDCkWm9/logo.png" alt="logo">
           <a href="#" class="logo">HealthTech<span>.</span></a>
-        </div>
+          </div>
 
-        <ul class="menu">
+          <ul class="menu">
           <li><a class="btn" href="#beranda">Beranda</a></li>
           <li><a class="btn" href="#profil">Profil</a></li>
           <li><a class="btn" href="#fitur">Fitur</a></li>
           <li><a class="btn" href="#produk">Produk</a></li>
           <li><a href="#home" class="btnnav">Instal</a></li>
-        </ul>
+          </ul>
 
-        <div class="tombol">&#9776;</div>
+          <div class="tombol">&#9776;</div>
       </div>
-    </header>
+      </header>
+  </nav>
 
     <!-- beranda -->
     <section class="beranda" id="beranda">
       <div class="beranda-text">
         <h1>HealthTech</h1>
         <h4><b>"Self-love ! Kunci Sukses di Era Digital."</b></h4>
-        <p>
+        <p id="description">
           HealthTech adalah platform integratif APLIKASI KESEHATAN DIGITAL
           menyatukan berbagai kebutuhan kesehatan menjadi satu, memberikan
           pengalaman untuk meningkatkan gaya hidup sehat.
         </p>
-        <a href="">Install App</a>
+        <a href="https://skilvul.com" id="link">Install App</a>
       </div>
 
       <div class="beranda-img">
@@ -60,7 +62,7 @@
       <h1 class="heading"><span> Profil </span> Kami</h1>
       <div class="row">
         <div class="video-container">
-          <video src="assets/videoabout.mp4" loop autoplay muted></video>
+          <img src="https://i.ibb.co/S6trzn2/Desain-tanpa-judul-1.png" alt="beranda">
           <h3>Best HealthTech</h3>
         </div>
 
@@ -325,12 +327,10 @@
             <div class="icon">
               <i class="fab fa-windows"></i>
               <span><h3>WINDOWS</h3></span>
-              <!-- <div class="Windows">WINDOWS</div> -->
             </div>
             <div class="icon">
               <i class="fab fa-google-play"></i>
               <span><h3>PLAY STORE</h3></span>
-              <!-- <div class="PlayStore">PLAY STORE</div> -->
             </div>
           </div>
         </div>
@@ -347,35 +347,14 @@
       <div class="wrapper">
         <h3>Send us a Message</h3>
         <form>
-          <div class="dbl-field">
-            <div class="field">
-            <input id="name" type="text" placeholder="Name"><br>
-            </div>
-            <div class="field">
-            <input id="city" type="text" placeholder="City"><br>
-          </div>
-          </div>
-        
-          <div class="dbl-field">
-            <div class="field">
-            <input id="email" type="email" placeholder="Email"><br>
-            </div>
-            <div class="field">
-            <input id="zip-code" type="number" placeholder="Zip Code"><br>
-          </div>
-          </div>
-          
-          <div class="message">
-            <textarea placeholder="Write your message" name="message"></textarea>
-          </div>
-        
+          <input class="form-group" id="name" type="text" placeholder="Name">
+          <input class="form-group" id="city" type="text" placeholder="City">
+          <input class="form-group" id="email" type="email" placeholder="Email">
+          <input class="form-group" id="zip-code" type="number" placeholder="Zip Code">
+          <textarea id="message" placeholder="pesan"></textarea>
           <input id="status" type="checkbox">
-          <label for="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah
-            sesuai</label><br>
-        
-          <div class="button-area">
-            <button id="submit-form" type="submit">Submit</button><br>
-          </div>
+          <label id="check" for="status">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+          <button id="submit-form" type="submit">Submit</button>
           <div id="warning"></div>
         </form>
       </div>
