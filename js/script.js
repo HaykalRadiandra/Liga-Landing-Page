@@ -105,6 +105,53 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 
 // form
+// function handleGetFormData() {
+//     const formData = {
+//         name: document.getElementById('name').value,
+//         city: document.getElementById('city').value,
+//         email: document.getElementById('email').value,
+//         zipCode: document.getElementById('zip-code').value,
+//         status: document.getElementById('status').checked
+//     };
+//     return formData;
+// }
+
+// function isNumber(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         if (isNaN(parseInt(str[i]))) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+
+// function checkboxIsChecked() {
+//     return document.getElementById('status').checked;
+// }
+
+// function validateFormData(formData) {
+//     return (
+//         formData !== null &&
+//         !isNaN(formData.zipCode) &&
+//        checkboxIsChecked()
+//     );
+// }
+
+// function submit(event) {
+//     event.preventDefault();
+//     const isValid = validateFormData(handleGetFormData(formData));
+//     const warningDiv = document.getElementById('warning');
+
+//     if (isValid) {
+//         warningDiv.innerText = '';
+//     } else {
+//         warningDiv.innerText = 'Periksa form anda sekali lagi';
+//     }
+// }
+
+// document.querySelector('form').addEventListener('submit', submit);
+
 function handleGetFormData() {
     const formData = {
         name: document.getElementById('name').value,
@@ -114,40 +161,40 @@ function handleGetFormData() {
         status: document.getElementById('status').checked
     };
     return formData;
-}
-
-function isNumber(str) {
+  }
+  
+  function isNumber(str) {
     for (let i = 0; i < str.length; i++) {
         if (isNaN(parseInt(str[i]))) {
             return false;
         }
     }
     return true;
-}
-
-
-function checkboxIsChecked() {
+  }
+  
+  
+  function checkboxIsChecked() {
     return document.getElementById('status').checked;
-}
-
-function validateFormData(formData) {
+  }
+  
+  function validateFormData(formData) {
     return (
         formData !== null &&
         !isNaN(formData.zipCode) &&
        checkboxIsChecked()
     );
-}
-
-function submit(event) {
+  }
+  
+  function submit(event) {
     event.preventDefault();
     const isValid = validateFormData(handleGetFormData(formData));
     const warningDiv = document.getElementById('warning');
-
+  
     if (isValid) {
         warningDiv.innerText = '';
     } else {
         warningDiv.innerText = 'Periksa form anda sekali lagi';
     }
-}
-
-document.querySelector('form').addEventListener('submit', submit);
+  }
+  
+  document.querySelector('form').addEventListener('submit', submit);

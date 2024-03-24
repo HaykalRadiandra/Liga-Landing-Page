@@ -51,7 +51,7 @@
       </div>
 
       <div class="beranda-img">
-        <img src="assets/logo.png" alt="" />
+        <img src="assets/beranda.png" alt="" />
       </div>
     </section>
 
@@ -338,40 +338,48 @@
     </div>
 
     <!-- form -->
-    <section class="contact">
-      <div class="left-side">
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d281.85693575552835!2d110.43045994940985!3d-6.955946532065439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sasrama%20sidodadiJl.%20Ronggowarsito%20No.112%2C%20Tj.%20Mas%2C%20Kec.%20Semarang%20Utara%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050174!5e0!3m2!1sid!2sid!4v1711001441792!5m2!1sid!2sid"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+    <div class="form-page">
+    
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4080720506413!2d110.4282291750442!3d-6.961094893039363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f3597316113f%3A0xa5ff47b450ab28a2!2sJl.%20Ronggowarsito%2C%20Tj.%20Mas%2C%20Kec.%20Semarang%20Utara%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050174!5e0!3m2!1sid!2sid!4v1710399483122!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
         </div>
-        <img src="assets/hppolos.png" alt="" />
-      </div>
-      <div class="right-side">
+      
+      <div class="wrapper">
+        <h3>Send us a Message</h3>
         <form>
-          <input id="name" type="text" placeholder="Name" /><br />
-          <input id="city" type="text" placeholder="City" /><br />
-          <input id="email" type="email" placeholder="Email" /><br />
-          <input id="zip-code" type="number" placeholder="Zip Code" /><br />
-          <input
-            id="user-message"
-            type="text"
-            placeholder="Your Message"
-          /><br />
-          <input id="status" type="checkbox" name="status" value="biasa" />
-          <label for="status"
-            >Dengan ini saya menyatakan data yang diisi pada form ini adalah
-            benar dan telah sesuai</label
-          >
-          <button id="submit-form" type="submit">Submit</button><br />
+          <div class="dbl-field">
+            <div class="field">
+            <input id="name" type="text" placeholder="Name"><br>
+            </div>
+            <div class="field">
+            <input id="city" type="text" placeholder="City"><br>
+          </div>
+          </div>
+        
+          <div class="dbl-field">
+            <div class="field">
+            <input id="email" type="email" placeholder="Email"><br>
+            </div>
+            <div class="field">
+            <input id="zip-code" type="number" placeholder="Zip Code"><br>
+          </div>
+          </div>
+          
+          <div class="message">
+            <textarea placeholder="Write your message" name="message"></textarea>
+          </div>
+        
+          <input id="status" type="checkbox">
+          <label for="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah
+            sesuai</label><br>
+        
+          <div class="button-area">
+            <button id="submit-form" type="submit">Submit</button><br>
+          </div>
           <div id="warning"></div>
         </form>
       </div>
-    </section>
+    </div>
 
     <!-- footer -->
     <footer>
