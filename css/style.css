@@ -718,7 +718,7 @@ header .container .menu {
 .form-page {
     display: flex;
     padding: 20px 9%;
-    min-height: 80vh;
+    min-height: 70vh;
     background: white;
     align-items: center;
     justify-content: center;
